@@ -1,0 +1,23 @@
+16-06-2025 20-10-43 - INFO - ** Started Domain Value Check Validation **
+16-06-2025 20-10-43 - INFO - ** Processing file C:\Users\suren\PycharmProjects\ETLAutomation_CITI\ConfigFiles_Scenarios\ARRG_DIM.json **
+16-06-2025 20-10-43 - INFO - Target Table name: ARRG_DIM
+16-06-2025 20-10-43 - INFO - Columns are {'ARRG_NM': {'allowed_values': ['abc', 'teju']}, 'ARRG_DESC': {'allowed_values': ['abc']}}
+16-06-2025 20-10-43 - INFO - where clause where arrg_id=456
+16-06-2025 20-10-43 - INFO - Column in for loop ARRG_NM
+16-06-2025 20-10-43 - INFO - Values are ['Teju', 'Suri', 'Suswi', 'abc']
+16-06-2025 20-10-43 - INFO - Column: ARRG_NM, Found values: ['Teju', 'Suri', 'Suswi', 'abc'], Allowed: ['abc', 'teju'], Invalid: ['Teju', 'Suri', 'Suswi']
+16-06-2025 20-10-43 - INFO - Column in for loop ARRG_DESC
+16-06-2025 20-10-43 - INFO - Values are ['Mother', 'Father', 'Daughter', 'abc']
+16-06-2025 20-10-43 - INFO - Column: ARRG_DESC, Found values: ['Mother', 'Father', 'Daughter', 'abc'], Allowed: ['abc'], Invalid: ['Mother', 'Father', 'Daughter']
+16-06-2025 20-10-43 - INFO - ** Started Domain Value Check Validation **
+16-06-2025 20-10-43 - INFO - ** Processing file C:\Users\suren\PycharmProjects\ETLAutomation_CITI\ConfigFiles_Scenarios\CRD_ARRG_DIM.json **
+16-06-2025 20-10-43 - INFO - Target Table name: CRD_ARRG_DIM
+16-06-2025 20-10-43 - INFO - Columns are {'ARRG_NM': {'allowed_values': ['abc', 'teju']}, 'ARRG_DESC': {'allowed_values': ['abc']}}
+16-06-2025 20-10-43 - INFO - where clause where arrg_id=123
+16-06-2025 20-10-43 - INFO - Column in for loop ARRG_NM
+16-06-2025 20-10-43 - INFO - Values are ['abc']
+16-06-2025 20-10-43 - INFO - Column: ARRG_NM, Found values: ['abc'], Allowed: ['abc', 'teju'], Invalid: []
+16-06-2025 20-10-43 - INFO - Column in for loop ARRG_DESC
+16-06-2025 20-10-43 - INFO - Values are ['abc']
+16-06-2025 20-10-43 - INFO - Column: ARRG_DESC, Found values: ['abc'], Allowed: ['abc'], Invalid: []
+16-06-2025 20-10-43 - INFO - Domain validation results written to: C:\Users\suren\PycharmProjects\ETLAutomation_CITI\TestResults\DomainCheckResult_16-06-2025_20-10-43.xlsx

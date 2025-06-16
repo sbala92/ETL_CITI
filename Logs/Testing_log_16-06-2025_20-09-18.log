@@ -1,0 +1,45 @@
+16-06-2025 20-09-19 - INFO - ** Started Count Validation **
+16-06-2025 20-09-19 - INFO - ** Processing file C:\Users\suren\PycharmProjects\ETLAutomation_CITI\ConfigFiles_Scenarios\ARRG_DIM.json **
+16-06-2025 20-09-19 - INFO - Target Table name: ARRG_DIM
+16-06-2025 20-09-19 - INFO - Count Query:select count(*) from ARRG_DIM
+16-06-2025 20-09-19 - INFO - Count of ARRG_DIM is: 5
+16-06-2025 20-09-19 - INFO - Table result [  Database Table Name  Count
+0   Oracle   ARRG_DIM      5]
+16-06-2025 20-09-19 - INFO - ** Started Count Validation **
+16-06-2025 20-09-19 - INFO - ** Processing file C:\Users\suren\PycharmProjects\ETLAutomation_CITI\ConfigFiles_Scenarios\CRD_ARRG_DIM.json **
+16-06-2025 20-09-19 - INFO - Target Table name: CRD_ARRG_DIM
+16-06-2025 20-09-19 - INFO - Count Query:select count(*) from CRD_ARRG_DIM
+16-06-2025 20-09-19 - INFO - Count of CRD_ARRG_DIM is: 1
+16-06-2025 20-09-19 - INFO - Table result [  Database Table Name  Count
+0   Oracle   ARRG_DIM      5,   Database    Table Name  Count
+0   Oracle  CRD_ARRG_DIM      1]
+16-06-2025 20-09-19 - INFO - ** Started Not Null Check Validation **
+16-06-2025 20-09-19 - INFO - ** Processing file C:\Users\suren\PycharmProjects\ETLAutomation_CITI\ConfigFiles_Scenarios\ARRG_DIM.json **
+16-06-2025 20-09-19 - INFO - Target Table name: ARRG_DIM
+16-06-2025 20-09-19 - INFO - Null Records:1
+16-06-2025 20-09-19 - INFO - Table result [  Database Table Name  ...  Status               Result
+0   Oracle   ARRG_DIM  ...    Fail  Null records Found!
+
+[1 rows x 6 columns]]
+16-06-2025 20-09-19 - INFO - ** Started Not Null Check Validation **
+16-06-2025 20-09-19 - INFO - ** Processing file C:\Users\suren\PycharmProjects\ETLAutomation_CITI\ConfigFiles_Scenarios\CRD_ARRG_DIM.json **
+16-06-2025 20-09-19 - INFO - Target Table name: CRD_ARRG_DIM
+16-06-2025 20-09-19 - INFO - Null Records:1
+16-06-2025 20-09-19 - INFO - Table result [  Database Table Name  ...  Status               Result
+0   Oracle   ARRG_DIM  ...    Fail  Null records Found!
+
+[1 rows x 6 columns],   Database    Table Name  ...  Status               Result
+0   Oracle  CRD_ARRG_DIM  ...    Fail  Null records Found!
+
+[1 rows x 6 columns]]
+16-06-2025 20-09-19 - INFO - ** Started Duplicate Check Validation **
+16-06-2025 20-09-19 - INFO - ** Processing file C:\Users\suren\PycharmProjects\ETLAutomation_CITI\ConfigFiles_Scenarios\ARRG_DIM.json **
+16-06-2025 20-09-19 - INFO - Target Table name: ARRG_DIM
+16-06-2025 20-09-19 - INFO - Duplicate Records:2
+16-06-2025 20-09-19 - INFO - Table result [  Database Table Name  ...  Status                    Result
+0   Oracle   ARRG_DIM  ...    Fail  Duplicate records Found!
+
+[1 rows x 6 columns]]
+16-06-2025 20-09-19 - INFO - ** Processing file C:\Users\suren\PycharmProjects\ETLAutomation_CITI\ConfigFiles_Scenarios\CRD_ARRG_DIM.json **
+16-06-2025 20-09-19 - INFO - Target Table name: CRD_ARRG_DIM
+16-06-2025 20-09-19 - ERROR - in file - CRD_ARRG_DIM.json: index 0 is out of bounds for axis 0 with size 0

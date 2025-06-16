@@ -1,0 +1,28 @@
+{
+  "Source and Target Tables":{
+    "t_table": "CRD_ARRG_DIM"
+  },
+  "tc_01_Verifying the Count": {
+    "t_count": "select count(*) from CRD_ARRG_DIM"
+  },
+  "tc_02_Verifying Null Records": {
+    "null_count": "select count(*) from CRD_ARRG_DIM where ARRG_ID is null or ARRG_COB_DT is null",
+    "null_records": "select * from CRD_ARRG_DIM where ARRG_ID is null or ARRG_COB_DT is null"
+  },
+  "tc_03_Duplicate Check": {
+    "dup_count": "select count(*) from CRD_ARRG_DIM group by arrg_id having count(*)>1",
+    "dup_records": "select arrg_id from CRD_ARRG_DIM group by arrg_id having count(*)>1"
+  },
+  "tc_04_DomainValue Check": {
+    "columns": {
+      "ARRG_NM": {
+        "allowed_values": ["abc","teju"]
+      },
+      "ARRG_DESC": {
+        "allowed_values": ["abc"]
+      }
+    },
+    "query": "select distinct ARRG_NM,ARRG_DESC from CRD_ARRG_DIM",
+    "where_con": "where arrg_id=123"
+  }
+}
