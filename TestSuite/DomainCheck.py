@@ -3,7 +3,7 @@ import logging
 from datetime import datetime
 import json
 import pandas as pd
-
+import math
 
 dt=datetime.now().strftime("%d-%m-%Y_%H-%M-%S")
 log_file=f"C:\\Users\\suren\\PycharmProjects\\ETLAutomation_CITI\\Logs\\Testing_log_{dt}.log"
